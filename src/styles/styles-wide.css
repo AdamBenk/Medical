@@ -1,0 +1,114 @@
+html{
+    height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: Poppins-Light;
+    font-size: 11px;
+    font-stretch: narrower;
+}
+
+.ContactInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    min-width: 1200px;
+    padding-left: 480px;
+    background-color: rgb(229, 243, 243);
+    display: flex;
+    justify-content: space-between;
+}
+
+.SocialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.EmailandPhone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 100px;
+}
+
+.RollDownMenus {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1200px;
+    height: 55px;
+    padding-left: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.RollDownMenus .menulist {
+    display: flex;
+    gap: 18px;
+}
+
+.BigPic {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    height: 350px;
+    box-sizing: border-box;
+    padding-left: 480px;
+    background-image: url('../images/header-background.webp'); 
+}
+
+.BigPic h1 {
+    font-size: 40px;
+}
+
+.BigPic h1 span.HealthCare {
+    font-family: Poppins-Bold;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.BigPic section {
+    width: 340px;
+}
+
+.BlueInfo {
+    position: absolute;
+    top: 435px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding-left: 480px;
+    box-sizing: border-box;
+    background-color: rgb(60, 190, 220);
+    color: white;
+}
+
+.BlueInfo div {
+    width: 240px;
+    box-sizing: border-box;
+    padding: 25px 10px 25px 10px;
+}
+
+.BlueInfo h3 {
+    margin: 15px 0 10px 0;
+}
+
+.BlueInfo p {
+    margin: 0;
+}
+
+.BlueInfo .EmergencyCare {
+    background-color: rgb(60, 160, 220);
+}

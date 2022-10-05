@@ -1,4 +1,142 @@
 
-body {
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../assets/Poppins-Bold.ttf') format('truetype'),
+    url('../assets/Poppins-Bold.woff') format('woff'),
+    url('../assets/Poppins-Bold.woff2') format('woff2');
+}
 
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../assets/Poppins-Light.ttf') format('truetype'),
+    url('../assets/Poppins-Light.woff') format('woff'),
+    url('../assets/Poppins-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../assets/Poppins-Medium.ttf') format('truetype'),
+    url('../assets/Poppins-Medium.woff') format('woff'),
+    url('../assets/Poppins-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../assets/Poppins-Regular.ttf') format('truetype'),
+    url('../assets/Poppins-Regular.woff') format('woff'),
+    url('../assets/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url('../assets/Poppins-Thin.ttf') format('truetype'),
+    url('../assets/Poppins-Thin.woff') format('woff'),
+    url('../assets/Poppins-Thin.woff2') format('woff2');
+}
+
+button {
+    width: auto;
+    border-radius: 6%;
+    border: 1px solid;
+    padding: 0 20px 0 20px;
+    font-family: Poppins-Light;
+    font-size: 11px;
+    color: white;
+}
+
+body button:hover {
+    background-color: #c1cfe7;
+}
+
+body button:active {
+    background-color: #22234e;
+}
+
+.BlueInfo button {
+    height: 30px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    color: white;
+}
+
+.BigPic button {
+    height: 40px;
+    background-color: #16a9e8;
+}
+
+.RollDownMenus button {
+    height: 30px;
+    background-color: #16a9e8;
+    margin-right: 100px;
+}
+
+.SocialMedia a {
+    height: 12px;
+    width: 12px; 
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.SocialMedia .linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+
+.SocialMedia .facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+.SocialMedia .google {
+    background-image: url(../images/google-plus.svg);
+}
+
+.EmailandPhone img {
+    height: 12px;
+    width: auto;
+    opacity: 0.5;
+}
+
+.EmailandPhone a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.EmailandPhone a:hover {
+    text-decoration: underline;
+}
+
+.EmailandPhone .infoemail {
+    padding-right: 30px;
+}
+
+.RollDownMenus img {
+    height: 30px;
+    width: auto;
+}
+
+.RollDownMenus .menulist a {
+    color: rgb(68, 68, 68);
+    text-decoration-line: none;
+}
+
+.RollDownMenus .menulist a:hover {
+    text-decoration-line: underline;
+}
+
+.BlueInfo img {
+    height: 25px;
+    width: auto;
+}
+
+.RollDownMenus .menulist {
+    color: rgb(68, 68, 68);
+}
+
+.RollDownMenus select {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    color: rgb(68, 68, 68);
 }

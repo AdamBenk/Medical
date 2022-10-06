@@ -8,18 +8,19 @@ body {
     position: relative;
     font-family: Poppins-Light;
     font-size: 11px;
-    font-stretch: narrower;
+}
+
+div.container {
+    width: 60%;
+    min-width: 1400px;
+    margin: auto;
 }
 
 .ContactInfo {
-    position: absolute;
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     height: 30px;
     width: 100%;
-    min-width: 1200px;
-    padding-left: 480px;
+    min-width: 1400px;
     background-color: rgb(229, 243, 243);
     display: flex;
     justify-content: space-between;
@@ -31,22 +32,15 @@ body {
 }
 
 .EmailandPhone {
-    display: flex;
     align-items: center;
     gap: 10px;
     padding-right: 100px;
 }
 
 .RollDownMenus {
-    position: absolute;
-    top: 30px;
-    left: 0;
     box-sizing: border-box;
     width: 100%;
-    min-width: 1200px;
     height: 55px;
-    padding-left: 480px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -57,14 +51,10 @@ body {
 }
 
 .BigPic {
-    position: absolute;
-    top: 85px;
-    left: 0;
     width: 100%;
     min-width: 1200px;
     height: 350px;
     box-sizing: border-box;
-    padding-left: 480px;
     background-image: url('../images/header-background.webp'); 
 }
 
@@ -83,20 +73,16 @@ body {
 }
 
 .BlueInfo {
-    position: absolute;
-    top: 435px;
-    left: 0;
     width: 100%;
     height: 200px;
     display: flex;
-    padding-left: 480px;
     box-sizing: border-box;
     background-color: rgb(60, 190, 220);
     color: white;
 }
 
 .BlueInfo div {
-    width: 240px;
+    width: 33%;
     box-sizing: border-box;
     padding: 25px 10px 25px 10px;
 }

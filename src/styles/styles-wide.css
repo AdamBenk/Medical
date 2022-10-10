@@ -99,3 +99,97 @@ div.BigPicCollector {
 .BlueInfo .EmergencyCare {
     background-color: rgb(60, 160, 220);
 }
+
+div.Welcome {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.WelcomeContainer {
+    height: 80%;
+    width: 50%;
+}
+
+div.Welcomesub1 {
+    width: 50%;
+    float: left;
+}
+
+.Welcomesub1 img {
+    height: 55%;
+}
+
+img.docpic2overlay {
+    position: relative;
+    top: 10%;
+    left: -20%;
+}
+
+div.Welcomesub2 {
+    width: 50%;
+    float: right;
+}
+
+.Welcomesub2 h4::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background-color: rgb(60, 160, 220);
+    position: relative;
+    left: -122px;
+    top: 16px;
+    
+}
+.Welcomesub2 ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+div.Departments {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+header.DeptsHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.DeptsHeader h1::after {
+    content: "";
+    display: inline-block;
+    height: 2.5px;
+    width: 22%;
+    background-color: rgb(60, 160, 220);
+    position: relative;
+    left: 39%;
+    top: 10px;
+}
+
+.DeptsHeader p {
+    text-align: center;
+}
+
+.DepartmentsGrid img {
+    height: 150px;
+}
+
+div.DepartmentsGrid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2, auto;
+}
+
+.DepartmentsGrid div {
+    margin-bottom: 15px;
+}

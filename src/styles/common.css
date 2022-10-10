@@ -74,6 +74,12 @@ body button:active {
     color: white;
 }
 
+.Welcomesub2 button {
+    color: rgb(60, 160, 220);
+    border-color: rgb(60, 160, 220);
+    height: 30px;
+}
+
 .SocialMedia a {
     height: 12px;
     width: 12px; 
@@ -142,4 +148,13 @@ body button:active {
     margin: 0;
     width: 15px;
     color: rgb(68, 68, 68);
+}
+
+.DepartmentsGrid a {
+    text-decoration-line: none;
+    color: rgb(60, 160, 220);
+}
+
+.DepartmentsGrid a:hover {
+    text-decoration-line: underline;
 }

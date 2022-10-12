@@ -41,7 +41,7 @@ div.HeaderCollector {
     height: 55px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 div.MenuCollector {
@@ -50,11 +50,6 @@ div.MenuCollector {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.RollDownMenus .menulist {
-    display: flex;
-    gap: 18px;
 }
 
 .BigPic {
@@ -192,4 +187,137 @@ div.DepartmentsGrid {
 
 .DepartmentsGrid div {
     margin-bottom: 15px;
+}
+
+div.BigPic2 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(60, 160, 220);
+}
+
+div.BigPic2container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BigPic2container h1 {
+    font-size: 50px;
+    font-family: Poppins-Bold;
+    margin: 0;
+}
+
+.BigPic2container p {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-size: larger;
+}
+
+.BigPic2container h4::before {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    width: 70%;
+    background-color: white;
+    position: relative;
+    left: 15%;
+    top: -10px;
+}
+
+nav.MenuList2 {
+    height: 80px;
+    background-color: rgb(229, 243, 243);
+}
+
+div.LeadingEdge {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeadingEdgeContainer {
+    width: 50%;
+    height: 80%;
+}
+
+.LeadingEdgeContainer::after {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    width: 100%;
+    position: relative;
+    top: -10%;
+    background-color: rgb(195, 208, 208);
+}
+
+.sometext {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+
+.sometext img {
+    width: 25px;
+    height: auto;
+}
+
+.LeadingEdgePic {
+    width: 50%;
+    height: 80%;
+     float: right;
+}
+
+div.Doctors {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+div.DocContainer {
+    width: 50%;
+    height: 100%;
+}
+
+div.DoctorsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+}
+
+.DoctorsGrid div {
+    height: 100%;
+    background-color: rgb(229, 243, 243);
+}
+
+.DoctorsGrid h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.DoctorsGrid p {
+    text-align: center;
+    margin-top: 0;
+}
+
+div.Booking {
+    height: 200px;
+    display: flex;
+}
+
+div.Emergency {
+    flex-grow: 1; 
+    background-color: rgb(60, 190, 220);
+}
+
+.Booking .Appointment {
+    flex-grow: 1;
+    background-color: rgb(60, 160, 220);
 }

@@ -49,11 +49,11 @@ button {
 }
 
 body button:hover {
-    background-color: #c1cfe7;
+    background: #c1cfe7;
 }
 
 body button:active {
-    background-color: #22234e;
+    background: #22234e;
 }
 
 .RollDownMenus button {
@@ -78,6 +78,12 @@ body button:active {
     color: rgb(60, 160, 220);
     border-color: rgb(60, 160, 220);
     height: 30px;
+}
+
+.Booking button {
+    float: right;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .SocialMedia a {
@@ -123,6 +129,92 @@ body button:active {
     width: auto;
 }
 
+nav.menulist {
+    display: grid;
+    place-items: center;
+}
+
+.menulist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menulist >ul {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.menulist  >ul >li {
+    margin: 0 0.5rem;
+}
+
+.Blog_listelement {
+    position: relative;
+}
+
+.Pages_listelement {
+    position: relative;
+}
+
+.Blog_dorpdown_menu {
+    background-color: rgb(220, 210, 210);
+    border-radius: 4px;
+    padding: 0.5em 0;
+    position: absolute;
+    top: calc(100% - 0.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
+    visibility: hidden;
+    transition: 280ms all ease-out;
+}
+
+.Pages_dropdown_menu {
+    background-color: rgb(220, 210, 210);
+    border-radius: 4px;
+    padding: 0.5em 0;
+    position: absolute;
+    top: calc(100% - 0.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
+    visibility: hidden;
+    transition: 280ms all ease-out;
+}
+
+.menulist ul li:hover ul, 
+.menulist ul li:focus-within ul {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
+}
+
+.Blog_dorpdown_menu a {
+    display: block;
+    text-align: center;
+}
+
+.menulist button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    color: rgb(68, 68, 68);
+    height: fit-content;
+}
+
+.menulist button:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+
+
 .RollDownMenus .menulist a {
     color: rgb(68, 68, 68);
     text-decoration-line: none;
@@ -157,4 +249,10 @@ body button:active {
 
 .DepartmentsGrid a:hover {
     text-decoration-line: underline;
+}
+
+.Doctors img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }

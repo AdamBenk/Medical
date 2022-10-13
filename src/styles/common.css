@@ -81,9 +81,11 @@ body button:active {
 }
 
 .Booking button {
-    float: right;
-    border-radius: 50%;
+    border-radius: 19px;
     background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 10px 20px;
+    margin: 0 25px 0 25px;
 }
 
 .SocialMedia a {
@@ -129,11 +131,6 @@ body button:active {
     width: auto;
 }
 
-nav.menulist {
-    display: grid;
-    place-items: center;
-}
-
 .menulist ul {
     list-style: none;
     padding: 0;
@@ -160,6 +157,7 @@ nav.menulist {
     background-color: rgb(220, 210, 210);
     border-radius: 4px;
     padding: 0.5em 0;
+    min-width: 50px;
     position: absolute;
     top: calc(100% - 0.25rem);
     left: 50%;
@@ -175,6 +173,7 @@ nav.menulist {
     background-color: rgb(220, 210, 210);
     border-radius: 4px;
     padding: 0.5em 0;
+    min-width: 50px;
     position: absolute;
     top: calc(100% - 0.25rem);
     left: 50%;
@@ -193,7 +192,25 @@ nav.menulist {
     visibility: visible;
 }
 
-.Blog_dorpdown_menu a {
+.Blog_dropdown_selector::after {
+    content: "";
+    display: inline-block;
+    border: 0.35rem solid transparent;
+    border-top-color: rgb(68, 68, 68);
+    margin-left: 0.25em;
+    transform: translateY(0.15em);
+}
+
+.Pages_dropdown_selector::after {
+    content: "";
+    display: inline-block;
+    border: 0.35rem solid transparent;
+    border-top-color: rgb(68, 68, 68);
+    margin-left: 0.25em;
+    transform: translateY(0.15em);
+}
+
+.menulist  a {
     display: block;
     text-align: center;
 }
@@ -212,8 +229,6 @@ nav.menulist {
     background: none;
     text-decoration: underline;
 }
-
-
 
 .RollDownMenus .menulist a {
     color: rgb(68, 68, 68);
@@ -255,4 +270,89 @@ nav.menulist {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.Menu2 button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    color: rgb(68, 68, 68);
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+}
+
+.Menu2 button:hover {
+    background: white;
+}
+
+.Menu2 >ul {
+    width: 50%;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.LeadingEdge_menu {
+    position: relative;
+}
+
+.menulist2_subul1 {
+    position: absolute;
+    padding: 0;
+    left: 150%;
+    transform: translateX(-50%);
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
+    visibility: hidden;
+    transition: 280ms all ease-out;
+}
+
+.Menu2 ul li:hover ul, 
+.Menu2 ul li:focus-within ul {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
+}
+
+.menulist2_subul1 li {
+    width: 700px;
+    height: 250px;
+}
+
+.sometext {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-top: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.sometext img {
+    width: 25px;
+    height: auto;
+}
+
+.LeadingEdgePic {
+    width: 50%;
+    height: 80%;
+    float: right;
+    margin: 2em 0 2em 0;
+}
+
+.menulist2_subul1 li::after {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    width: 100%;
+    position: relative;
+    top:-5%;
+    background-color: rgb(181, 175, 175);
 }

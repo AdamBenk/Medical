@@ -229,50 +229,16 @@ div.BigPic2container {
     top: -10px;
 }
 
-nav.MenuList2 {
+nav.Menu2 {
     height: 80px;
     background-color: rgb(229, 243, 243);
+    color: rgb(68, 68, 68);
+    display: flex;
+    justify-content: center;
 }
 
 div.LeadingEdge {
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.LeadingEdgeContainer {
-    width: 50%;
-    height: 80%;
-}
-
-.LeadingEdgeContainer::after {
-    content: "";
-    display: inline-block;
-    height: 1.5px;
-    width: 100%;
-    position: relative;
-    top: -10%;
-    background-color: rgb(195, 208, 208);
-}
-
-.sometext {
-    width: 50%;
-    height: 100%;
-    float: left;
-    padding-top: 5%;
-    box-sizing: border-box;
-}
-
-.sometext img {
-    width: 25px;
-    height: auto;
-}
-
-.LeadingEdgePic {
-    width: 50%;
-    height: 80%;
-     float: right;
+    height: 300px;
 }
 
 div.Doctors {
@@ -310,14 +276,30 @@ div.DoctorsGrid {
 div.Booking {
     height: 200px;
     display: flex;
+    color: white;
+}
+
+.Booking h2 {
+    margin: 0;
+}
+
+.Booking p {
+    margin: 5px 0 0 0;
 }
 
 div.Emergency {
     flex-grow: 1; 
     background-color: rgb(60, 190, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Booking .Appointment {
     flex-grow: 1;
     background-color: rgb(60, 160, 220);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
 }

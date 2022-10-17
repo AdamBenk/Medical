@@ -356,3 +356,49 @@ body button:active {
     top:-5%;
     background-color: rgb(181, 175, 175);
 }
+
+.UpperFooter a {
+    color: white;
+    text-decoration: none;
+}
+
+.UpperFooter a:hover {
+    text-decoration: underline;
+}
+
+.UpperFooter img {
+    height: 20px;
+    width: auto;
+}
+
+.Docmed h2 img {
+    height: 30px;
+}
+
+.UpperFooter ul {
+    padding: 0;
+    list-style: none;
+}
+
+.UpperFooter li {
+    margin: 10px 0;
+}
+
+.SocialMedia2 button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin-right: 5px;
+    background: rgb(150, 141, 141);
+    opacity: 0.5;
+    border: none;
+}
+
+.SocialMedia2 img {
+    height: 10px;
+    width: 10px;
+}
+
+span.colorfib {
+color: #16a9e8;
+}

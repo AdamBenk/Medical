@@ -303,3 +303,38 @@ div.Emergency {
     flex-direction: row-reverse;
     justify-content: center;
 }
+
+footer.UpperFooter {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(68, 68, 68);
+    color: rgb(217, 227, 227);
+}
+
+.UpperFooter div {
+    height: 50%;
+    margin: 0 25px;
+}
+
+.SocialMedia2 {
+    height: 25px;
+    margin-top: 25px;
+}
+
+.DownFooter {
+    height: 50px;
+    background-color: rgb(30, 26, 26);
+    color: rgb(217, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DownFooter div {
+    height: max-content;
+}
+
+
+

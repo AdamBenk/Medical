@@ -35,7 +35,7 @@
 }
 
 button {
-    width: auto;
+    min-width: max-content;
     border-radius: 6%;
     border: 1px solid;
     padding: 0 20px 0 20px;
@@ -241,7 +241,6 @@ body button:active {
 
 .BlueInfo img {
     height: 25px;
-    width: auto;
 }
 
 .RollDownMenus .menulist {
@@ -266,21 +265,18 @@ body button:active {
     text-decoration-line: underline;
 }
 
-.Doctors img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
+
 
 .Menu2 button {
     display: inline-block;
     background-color: transparent;
     border: none;
     box-shadow: none;
-    padding: 0;
+    padding: 0 5%;
     color: rgb(68, 68, 68);
     height: 100%;
     width: 100%;
+    min-width: min-content;
     font-size: 18px;
 }
 

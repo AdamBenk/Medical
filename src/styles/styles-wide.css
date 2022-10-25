@@ -12,7 +12,6 @@ body {
 }
 
 .ContactInfo {
-    height: 30px;
     background-color: rgb(229, 243, 243);
     display: flex;
     justify-content: center;
@@ -38,7 +37,7 @@ div.HeaderCollector {
 }
 
 .RollDownMenus {
-    height: 55px;
+    min-height: 55px;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -53,8 +52,9 @@ div.MenuCollector {
 }
 
 .BigPic {
-    height: 400px;
+    min-height: 400px;
     background-image: url(../images/header-background.webp); 
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -63,7 +63,12 @@ div.BigPicCollector {
     width: 50%;
 }
 
-.BigPic h1 {
+.BigPicCollector h1, .BigPicCollector p {
+    width: max-content;
+    max-width: 50%;
+}
+
+.BigPicCollector h1 {
     font-size: 40px;
 }
 
@@ -74,7 +79,6 @@ div.BigPicCollector {
 }
 
 .BlueInfo {
-    height: 200px;
     display: flex;
     justify-content: center;
     background-color: rgb(60, 190, 220);
@@ -82,49 +86,56 @@ div.BigPicCollector {
 }
 
 .BlueInfo div {
-    width: 16.66%;
+    max-width: 16.66%;
     box-sizing: border-box;
     padding: 25px 10px 25px 10px;
 }
 
-.BlueInfo h3 {
-    margin: 15px 0 10px 0;
-}
-
-.BlueInfo .EmergencyCare {
+.BlueInfo div:nth-child(2) {
     background-color: rgb(60, 160, 220);
 }
 
+.BlueInfo h3 {
+    margin: 15px 0;
+}
+
+.BlueInfo h3, h3+p {
+    max-width: 100%;
+}
+
 div.Welcome {
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 div.WelcomeContainer {
-    height: 80%;
+    width: 50%;
+    display: flex;
+}
+
+.WelcomeContainer >div {
     width: 50%;
 }
 
-div.Welcomesub1 {
-    width: 50%;
-    float: left;
+.WelcomeContainer div:first-child {
+    position: relative;
 }
 
 .Welcomesub1 img {
-    height: 55%;
-}
-
-img.docpic2overlay {
-    position: relative;
-    top: 10%;
-    left: -20%;
-}
-
-div.Welcomesub2 {
+    height: 70%;
     width: 50%;
-    float: right;
+}
+
+.Welcomesub1 img:nth-child(2) {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.Welcomesub2 p {
+    min-width: 80%;
 }
 
 .Welcomesub2 h4::after {
@@ -144,14 +155,14 @@ div.Welcomesub2 {
 }
 
 div.Departments {
-    height: 700px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 
 header.DeptsHeader {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,21 +183,26 @@ header.DeptsHeader {
 
 .DeptsHeader p {
     text-align: center;
+    max-width: 50%;
 }
 
 .DepartmentsGrid img {
-    height: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.DepartmentsGrid p {
+    width: 80%;
 }
 
 div.DepartmentsGrid {
     width: 50%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2, auto;
 }
 
 .DepartmentsGrid div {
-    margin-bottom: 15px;
+    margin: 0 5% 5% 5%;
 }
 
 div.BigPic2 {
@@ -238,45 +254,66 @@ nav.Menu2 {
 }
 
 div.LeadingEdge {
-    height: 300px;
+    min-height: 300px;
 }
 
 div.Doctors {
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
 }
 
 div.DocContainer {
     width: 50%;
-    height: 100%;
+}
+
+.DocContainer h1 {
+    margin-left: 1.25%;
 }
 
 div.DoctorsGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3%;
 }
 
 .DoctorsGrid div {
-    height: 100%;
     background-color: rgb(229, 243, 243);
+    margin: 0 5%;
 }
 
-.DoctorsGrid h2 {
+.Doctors img {
+    width: 100%;
+    height: auto;
+}
+
+.DoctorsGrid h2, .DoctorsGrid p {
+    width: 100%;
+    max-width: none;
     text-align: center;
     margin-bottom: 0;
 }
 
 .DoctorsGrid p {
-    text-align: center;
-    margin-top: 0;
+    margin: auto;
 }
 
 div.Booking {
-    height: 200px;
+    min-height: 200px;
     display: flex;
     color: white;
+}
+
+.Booking >div {
+    flex-grow: 1;
+    background-color: rgb(60, 190, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Booking div:nth-child(2) {
+    background-color: rgb(60, 160, 220);
+    flex-direction: row-reverse;
 }
 
 .Booking h2 {
@@ -284,28 +321,11 @@ div.Booking {
 }
 
 .Booking p {
-    margin: 5px 0 0 0;
-}
-
-div.Emergency {
-    flex-grow: 1; 
-    background-color: rgb(60, 190, 220);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Booking .Appointment {
-    flex-grow: 1;
-    background-color: rgb(60, 160, 220);
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
+    margin: 5px 0;
 }
 
 footer.UpperFooter {
-    height: 350px;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,13 +333,11 @@ footer.UpperFooter {
     color: rgb(217, 227, 227);
 }
 
-.UpperFooter div {
-    height: 50%;
+.UpperFooter >div {
     margin: 0 25px;
 }
 
 .SocialMedia2 {
-    height: 25px;
     margin-top: 25px;
 }
 
@@ -334,6 +352,7 @@ footer.UpperFooter {
 
 .DownFooter div {
     height: max-content;
+    text-align: center;
 }
 
 

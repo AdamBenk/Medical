@@ -1,0 +1,138 @@
+@media  (max-width: 800px) {
+    
+    body {
+        min-width: 0;
+        min-height: 0;
+    }
+
+    div.HeaderCollector {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.menulist {
+        display: none;
+    }
+
+    button.appointmentbutton {
+        display: none;
+    }
+
+    .BigPicCollector {
+        min-width: 80%;
+        align-items: center;
+        padding: 10% 0;
+    }
+
+    .BigPicCollector h1, .BigPicCollector p {
+        min-width: 80%;
+    }
+
+    .BigPicCollector h1 {
+        font-size: 30px;
+    }
+
+    nav.Blueinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Blueinfo div {
+        min-width: 80%;
+    }
+
+    div.WelcomeContainer {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+    }
+    
+    .WelcomeContainer >div {
+        width: 100%;
+    }
+    
+    .Welcomesub1 img {
+        width: 100%;
+    }
+
+    .Welcomesub1 img:nth-child(2) {
+        display: none;
+    }
+
+    header.DeptsHeader {
+        width: 80%;
+    }
+
+    div.DepartmentsGrid {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    div.BigPic2container {
+        width: 80%;
+    }
+
+    .Menu2 button {
+        font-size: 16px;
+    }
+
+    .Menu2 >ul {
+        width: 80%;
+    }
+
+    div.DocContainer {
+        width: 80%;
+    }
+
+    .DocContainer h1 {
+        margin-left: unset;
+    }
+
+    .DocContainer h1, .DocContainer p {
+        text-align: center;
+    }
+
+    div.DoctorsGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .DoctorsGrid >div {
+        margin: 5% 0;
+    }
+
+    .Booking >div {
+        width: 50%;
+        min-width: min-content;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10% 5% 0 5%;
+    }
+
+    .Booking div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .Booking button {
+        margin-bottom: 10%;
+    }
+
+    footer.UpperFooter {
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .UpperFooter >div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: unset;
+    }
+
+    .UpperFooter ul {
+        min-width: max-content;
+    }
+}

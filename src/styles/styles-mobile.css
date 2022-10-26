@@ -10,14 +10,6 @@
         align-items: center;
     }
 
-    nav.menulist {
-        display: none;
-    }
-
-    button.appointmentbutton {
-        display: none;
-    }
-
     .BigPicCollector {
         min-width: 80%;
         align-items: center;
@@ -80,6 +72,21 @@
 
     .Menu2 >ul {
         width: 80%;
+    }
+
+    .menulist2_subul1 {
+        width: 300%;
+    }
+
+    .sometext {
+        width: 100%;
+        float: none;
+    }
+
+    div.PicInMenu2 {
+        height: 50%;
+        width: 100%;
+        float: none;  
     }
 
     div.DocContainer {

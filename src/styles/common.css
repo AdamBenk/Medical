@@ -52,14 +52,27 @@ body button:hover {
     background: #c1cfe7;
 }
 
+
 body button:active {
     background: #22234e;
 }
 
-.RollDownMenus button {
+.MenuCollector button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    color: white;
+    height: fit-content;
+}
+
+button.appointmentbutton {
     height: 30px;
     background-color: #16a9e8;
 }
+
+
 
 .BigPic button {
     height: 40px;
@@ -86,6 +99,33 @@ body button:active {
     box-shadow: none;
     padding: 10px 20px 10px 20px;
     margin: 0 25px 0 25px;
+}
+
+.Menu2 button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0 5%;
+    color: rgb(68, 68, 68);
+    height: 100%;
+    width: 100%;
+    min-width: min-content;
+    font-size: 18px;
+}
+
+.Menu2 button:hover {
+    background: white;
+}
+
+.SocialMedia2 button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin-right: 5px;
+    background: rgb(150, 141, 141);
+    opacity: 0.5;
+    border: none;
 }
 
 .SocialMedia a {
@@ -131,121 +171,10 @@ body button:active {
     width: auto;
 }
 
-.menulist ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menulist >ul {
-    display: grid;
-    grid-auto-flow: column;
-}
-
-.menulist  >ul >li {
-    margin: 0 0.5rem;
-}
-
-.Blog_listelement {
-    position: relative;
-}
-
-.Pages_listelement {
-    position: relative;
-}
-
-.Blog_dorpdown_menu {
-    background-color: rgb(220, 210, 210);
-    border-radius: 4px;
-    padding: 0.5em 0;
-    min-width: 50px;
-    position: absolute;
-    top: calc(100% - 0.25rem);
-    left: 50%;
-    transform: translateX(-50%);
-    transform: rotateX(-90deg) translateX(-50%);
-    transform-origin: top center;
-    opacity: 0.3;
-    visibility: hidden;
-    transition: 280ms all ease-out;
-}
-
-.Pages_dropdown_menu {
-    background-color: rgb(220, 210, 210);
-    border-radius: 4px;
-    padding: 0.5em 0;
-    min-width: 50px;
-    position: absolute;
-    top: calc(100% - 0.25rem);
-    left: 50%;
-    transform: translateX(-50%);
-    transform: rotateX(-90deg) translateX(-50%);
-    transform-origin: top center;
-    opacity: 0.3;
-    visibility: hidden;
-    transition: 280ms all ease-out;
-}
-
-.menulist ul li:hover ul, 
-.menulist ul li:focus-within ul {
-    opacity: 1;
-    transform: rotateX(0) translateX(-50%);
-    visibility: visible;
-}
-
-.Blog_dropdown_selector::after {
-    content: "";
-    display: inline-block;
-    border: 0.35rem solid transparent;
-    border-top-color: rgb(68, 68, 68);
-    margin-left: 0.25em;
-    transform: translateY(0.15em);
-}
-
-.Pages_dropdown_selector::after {
-    content: "";
-    display: inline-block;
-    border: 0.35rem solid transparent;
-    border-top-color: rgb(68, 68, 68);
-    margin-left: 0.25em;
-    transform: translateY(0.15em);
-}
-
-.menulist  a {
-    display: block;
-    text-align: center;
-}
-
-.menulist button {
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    color: rgb(68, 68, 68);
-    height: fit-content;
-}
-
-.menulist button:hover {
-    background: none;
-    text-decoration: underline;
-}
-
-.RollDownMenus .menulist a {
-    color: rgb(68, 68, 68);
-    text-decoration-line: none;
-}
-
-.RollDownMenus .menulist a:hover {
-    text-decoration-line: underline;
-}
-
 .BlueInfo img {
     height: 25px;
 }
 
-.RollDownMenus .menulist {
-    color: rgb(68, 68, 68);
-}
 
 .RollDownMenus select {
     border: none;
@@ -266,23 +195,6 @@ body button:active {
 }
 
 
-
-.Menu2 button {
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 5%;
-    color: rgb(68, 68, 68);
-    height: 100%;
-    width: 100%;
-    min-width: min-content;
-    font-size: 18px;
-}
-
-.Menu2 button:hover {
-    background: white;
-}
 
 
 .UpperFooter a {
@@ -312,15 +224,6 @@ body button:active {
     margin: 10px 0;
 }
 
-.SocialMedia2 button {
-    height: 32px;
-    width: 32px;
-    padding: 0;
-    margin-right: 5px;
-    background: rgb(150, 141, 141);
-    opacity: 0.5;
-    border: none;
-}
 
 .SocialMedia2 img {
     height: 10px;

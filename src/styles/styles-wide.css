@@ -37,18 +37,85 @@ div.HeaderCollector {
 }
 
 .RollDownMenus {
-    min-height: 55px;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    max-height: 50px;
 }
 
-div.MenuCollector {
-    height: inherit;
+.RollDownMenus div:first-child {
     width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.RollDownMenus img {
+    height: 100%;
+    width: auto;
+}
+
+button.darkmenubutton {
+    display: none;
+}
+
+.MenuCollector {
+    height: 100%;
+    color: rgb(68, 68, 68);
+}
+
+.MenuCollector >ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.Menucollector li {
+    list-style: none;
+    margin: 5px;
+}
+
+.Blog_listelement, .Pages_listelement {
+    position: relative;
+}
+
+.Blog_dorpdown_menu, .Pages_dropdown_menu  {
+    background-color: rgb(220, 210, 210);
+    border-radius: 4px;
+    padding: 0.5em 0;
+    min-width: 50px;
+    position: absolute;
+    top: calc(100% - 0.25rem);
+    visibility: hidden;
+}
+
+.MenuCollector ul li:hover ul, 
+.MenuCollector ul li:focus-within ul {
+    visibility: visible;
+}
+
+.Blog_dropdown_selector::after, .Pages_dropdown_selector::after {
+    content: "";
+    display: inline-block;
+    border: 0.35rem solid transparent;
+    border-top-color: rgb(68, 68, 68);
+    margin-left: 0.25em;
+    transform: translateY(0.15em);
+}
+
+.MenuCollector  a {
+    display: block;
+    text-align: center;
+}
+
+.MenuCollector a {
+    color: rgb(68, 68, 68);
+    text-decoration-line: none;
+}
+
+.MenuCollector a:hover {
+    text-decoration-line: underline;
 }
 
 .BigPic {
@@ -57,6 +124,7 @@ div.MenuCollector {
     background-size: cover;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 div.BigPicCollector {

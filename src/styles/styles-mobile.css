@@ -5,9 +5,65 @@
         min-height: 0;
     }
 
+    .appointmentbutton {
+        display: none;
+    }
+
     div.HeaderCollector {
         flex-direction: column;
         align-items: center;
+    }
+
+    .RollDownMenus div:first-child {
+        max-height: inherit;
+        width: 80%;
+        display: block;        
+    }
+
+    div.MenuCollector {
+        height: auto;
+        background-color: rgb(47, 45, 43);
+        color: white;
+        margin-top: 2%;
+    }
+    
+    button.darkmenubutton {
+        display: block;
+        background-color: rgb(27, 26, 25);
+        color: white;
+        float: right;
+        font-family: Poppins-Bold;
+        border: 1px solid;
+        padding: 0 5px;
+        margin: 2%;
+        border-radius: 5%;
+    }
+
+    button.darkmenubutton:hover {
+        color: blueviolet;
+    }
+
+    .MenuCollector >ul {
+        clear: right;
+        display: block;
+        color:white;
+    }
+
+    .Blog_dorpdown_menu, .Pages_dropdown_menu {
+        background-color: rgb(85, 61, 61);
+        left: 15%;
+    }
+
+    .Blog_dropdown_selector::after, .Pages_dropdown_selector::after {
+        border-top-color: white;
+    }  
+
+    .MenuCollector  a {
+        text-align: left;
+    }
+
+    .MenuCollector a {
+        color: white;
     }
 
     .BigPicCollector {

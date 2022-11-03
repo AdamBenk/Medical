@@ -12,7 +12,7 @@ body {
 }
 
 .ContactInfo {
-    background-color: rgb(229, 243, 243);
+    background-color: var(--whiteyGrey);
     display: flex;
     justify-content: center;
 }
@@ -61,7 +61,7 @@ button.darkmenubutton {
 
 .MenuCollector {
     height: 100%;
-    color: rgb(68, 68, 68);
+    color: var(--lightGrey);
 }
 
 .MenuCollector >ul {
@@ -98,7 +98,7 @@ button.darkmenubutton {
     content: "";
     display: inline-block;
     border: 0.35rem solid transparent;
-    border-top-color: rgb(68, 68, 68);
+    border-top-color: var(--lightGrey);
     margin-left: 0.25em;
     transform: translateY(0.15em);
 }
@@ -109,7 +109,7 @@ button.darkmenubutton {
 }
 
 .MenuCollector a {
-    color: rgb(68, 68, 68);
+    color: var(--lightGrey);
     text-decoration-line: none;
 }
 
@@ -147,7 +147,7 @@ div.BigPicCollector {
 .BlueInfo {
     display: flex;
     justify-content: center;
-    background-color: rgb(60, 190, 220);
+    background-color: var(--backgroundBlue);
     color: white;
 }
 
@@ -158,7 +158,7 @@ div.BigPicCollector {
 }
 
 .BlueInfo div:nth-child(2) {
-    background-color: rgb(60, 160, 220);
+    background-color: var(--darkBlue);
 }
 
 .BlueInfo h3 {
@@ -209,7 +209,7 @@ div.WelcomeContainer {
     display: inline-block;
     height: 2px;
     width: 50px;
-    background-color: rgb(60, 160, 220);
+    background-color: var(--darkBlue);
     position: relative;
     left: -122px;
     top: 16px;
@@ -241,7 +241,7 @@ header.DeptsHeader {
     display: inline-block;
     height: 2.5px;
     width: 22%;
-    background-color: rgb(60, 160, 220);
+    background-color: var(--darkBlue);
     position: relative;
     left: 39%;
     top: 10px;
@@ -277,7 +277,7 @@ div.BigPic2 {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(60, 160, 220);
+    background-color: var(--darkBlue);
 }
 
 div.BigPic2container {
@@ -313,8 +313,8 @@ div.BigPic2container {
 
 nav.Menu2 {
     height: 80px;
-    background-color: rgb(229, 243, 243);
-    color: rgb(68, 68, 68);
+    background-color: var(--whiteyGrey);
+    color: var(--lightGrey);
     display: flex;
     justify-content: center;
 }
@@ -404,7 +404,7 @@ div.DoctorsGrid {
 }
 
 .DoctorsGrid div {
-    background-color: rgb(229, 243, 243);
+    background-color: var(--whiteyGrey);
     margin: 0 5%;
 }
 
@@ -432,14 +432,14 @@ div.Booking {
 
 .Booking >div {
     flex-grow: 1;
-    background-color: rgb(60, 190, 220);
+    background-color: var(--backgroundBlue);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .Booking div:nth-child(2) {
-    background-color: rgb(60, 160, 220);
+    background-color: var(--darkBlue);
     flex-direction: row-reverse;
 }
 
@@ -456,8 +456,8 @@ footer.UpperFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(68, 68, 68);
-    color: rgb(217, 227, 227);
+    background-color: var(--lightGrey);
+    color: var(--fontLightGrey);
 }
 
 .UpperFooter >div {
@@ -471,7 +471,7 @@ footer.UpperFooter {
 .DownFooter {
     height: 50px;
     background-color: rgb(30, 26, 26);
-    color: rgb(217, 227, 227);
+    color: var(--fontLightGrey);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -15,13 +15,13 @@
         align-items: center;
     }
 
-    .RollDownMenus {
+    .rolldown-menus {
         align-items: baseline;
         height: 40px;
         overflow: visible;
     }
 
-    .RollDownMenus >div {
+    .rolldown-menus >div {
         position: absolute;
         margin: auto;
         width: 80%;
@@ -33,41 +33,26 @@
         width: auto;    
     }
 
-    div.MenuCollector {
+    .MenuCollector {
+        position: relative;
         height: auto;
         background-color: rgb(47, 45, 43);
         color: white;
         margin-top: 2%;
-        min-height: 28.4px;
-    }
+        min-height: 32px;
+       
+    }   
 
-    button.darkmenubutton {
-        display: block;
-        background-color: rgb(27, 26, 25);
-        color: white;
+    .MenuCollector details >summary {
         float: right;
-        font-family: Poppins-Bold;
-        border: 1px solid;
-        padding: 0 5px;
+        border: 2px solid white;
         margin: 5px;
-        border-radius: 5%;
+        padding: 0.5px 5px;
     }
 
-    button.darkmenubutton:hover {
-        color: blueviolet;
-    }
-
-    button.darkmenubutton:active + ul {
-        display: block;
-    }
-
-    .MenuCollector >ul {
+    .MenuCollector details >ul {
         clear: right;
-        display: none;
-        color:white;
-        margin: 0;
     }
-
     .Blog_dorpdown_menu, .Pages_dropdown_menu {
         background-color: rgb(85, 61, 61);
         left: 15%;
